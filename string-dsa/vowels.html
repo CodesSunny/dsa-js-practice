@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        //  Count vowels in a string
+        //Q1: Count vowels in a string
         const str = "bureau";
         const vowels = ["a","e","i","o","u"];
 
@@ -22,7 +22,47 @@
             }
         }
 
-        console.log(count );
+        // console.log(count );
+
+        
+        // Q2: Reverse a string?
+        const reversed = [];
+        let reversedStr = "";
+        for(let i=str.length-1; i>=0; i--){
+            reversed.push(str[i]); 
+            reversedStr = reversed.join("");
+        }
+        
+        // console.log(reversedStr);      //"uaerub"
+
+
+
+    //    Q4:  Check if a String is a Palindrome
+    
+    function checkPalindrome(input) {
+        const reversed = [];
+        let reversedStr = "";
+        for(let i=input.length-1; i>=0; i--){
+            reversed.push(input[i]); 
+        }
+        reversedStr = reversed.join("");
+        if(input.toLowerCase() === reversedStr.toLowerCase()){
+            console.log(input, " :is a palindrome");
+            
+        }else{
+            console.log(input, " :is not a palindrome");
+
+        }
+        
+    }
+
+    checkPalindrome("malayalam");  //malayalam  :is a palindrome
+    checkPalindrome("malayala");  //malayala  :is not a palindrome
+
+
+
+    
+        
         
     </script>
 </body>
