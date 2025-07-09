@@ -59,6 +59,23 @@
     checkPalindrome("malayalam");  //malayalam  :is a palindrome
     checkPalindrome("malayala");  //malayala  :is not a palindrome
 
+    // Q4: Count how many times a character appears?
+    // count occurence of "a" in "Makhanaa"
+
+    let word = "Makhanaa";
+    function countChr(chr){
+        word = word.toLowerCase();
+        let count =0;
+
+        for(let i=0; i<word.length; i++){
+            if(word[i] === chr.toLowerCase()){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    console.log(countChr("a")); //4
 
 
     
