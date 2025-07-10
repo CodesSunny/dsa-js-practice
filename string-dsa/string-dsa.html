@@ -78,6 +78,47 @@
     console.log(countChr("a")); //4
 
 
+
+// Q5: First non-repeating character? 
+
+function getFirstNonRepChr(given){
+    
+    for (let i=0; i< given.length; i++){
+        let count = 0;
+
+        for(let k=0; k<given.length; k++){
+            if(given[i] === given[k]){
+                count++;       
+            }
+        }  
+        if(count === 1){
+                    console.log("first non repeating chr is: ", given[i]);
+                    return;
+                }
+    }
+    console.log("No non-repeating character found.");
+}
+
+getFirstNonRepChr("swiss");
+getFirstNonRepChr("sunnysir");
+
+
+
+// Q6: Given a string, count how many times each character appears, and log each count. 
+
+function countChr(input){
+    for(let i=0; i<input.length; i++){
+       let count =0;
+           for(let k=0; k<input.length; k++){
+         if (input[k] === input[i]){
+          count++;
+}
+}
+console.log(input[i], "count: ", count );}
+}
+
+countChr("moon");
+
     
         
         
